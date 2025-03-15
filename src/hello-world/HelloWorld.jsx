@@ -1,3 +1,4 @@
+import './style.css'
 export default function HelloWorld(){
     const props = {
         text: "Hello dari spread syntax"
@@ -15,11 +16,12 @@ function HeaderHelloWorld({text = "Ups, anda tidak memasukkan text"}){
     // const text = "Hello World";
     return(
         <div>
-            <h1 style={{ 
+            {/* <h1 style={{ 
                 color: "red",
                 fontSize: "20px",
                 backgroundColor: "aqua"
-             }}>{text.toUpperCase()}</h1>
+             }}>{text.toUpperCase()}</h1> */}
+            <h1 className="title">{text.toUpperCase()}</h1>
         </div>
     )
 }
